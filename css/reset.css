@@ -1,0 +1,90 @@
+
+
+body, p, h1, h2, h3, h4, ul{
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    min-width: 1070px;
+    margin: 0 auto;
+    
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+    display: block;
+}
+
+img{
+	border: none;
+	
+}
+
+
+button{
+	padding:0;
+	background-color: transparent;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+table{
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 0;
+}
+
+i{
+	font-style: normal;
+}
+
+input, button{
+	outline: none;
+}
+
+body{
+	font: 12rem tahoma , arial, 'Source Han Sans CN' ,sans-serif;
+	background-color: rgb(255, 255, 255);
+} 
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+div{
+	display: block;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.layer{
+    width: 1203rem;
+    margin: 0 auto;
+}
+
+
+
+
+

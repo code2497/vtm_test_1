@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>热泉港 - 生命科学仪器试剂耗材经销商</title>
+    <script>
+        //简单自适应加载
+
+        //获取用户宽
+        function getViewportOffset() {
+            if (document.compatMode === "BackCompat") {
+                return document.body.clientWidth;
+            } else {
+                return document.documentElement.clientWidth;
+            }
+        }
+        var autoAdjust = function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'resize',//存储窗口改变事件
+
+                recalc = function (e) {
+                    //窗口改变后的回调函数
+                    console.log(e);
+                    var clientWidth = getViewportOffset();
+                    if ((clientWidth <= 1070 && e.type != 'DOMContentLoaded') || (clientWidth <= 1070 && e.type == 'DOMContentLoaded')) {
+                        docEl.style.fontSize = 1 * (1070 / 1519) + 'px';
+                        return;
+                    }
+                    //1519为设计稿宽度
+                    //确定每个rem的大小，此处为一个单位rem等于相应一个单位px
+                    //相应的比例公式可以看day2的笔记
+                    docEl.style.fontSize = 1 * (clientWidth / 1519) + 'px';
+                };
+
+            if (!doc.addEventListener) return;
+
+
+
+
+            win.addEventListener(resizeEvt, recalc, false);//改变窗口时重新计算单位rem大小
+
+            doc.addEventListener('DOMContentLoaded', recalc, false);//HTML文档加载完成完成后计算rem大小
+        };
+
+        autoAdjust(document, window);
+    </script>
+
+</head>
+
+
+<body>
+    <!-- 固定公用图标 -->
+    <div class="fixed">
+        <div class="fixedbg QRcode">
+            <img src="images/QRcode.png" alt="">
+            <span>二维码</span>
+        </div>
+        <div class="fixedbg service">
+            <a href="#">
+                <img src="images/WOMAN USER.png" alt="">
+                <span>在线客服</span>
+            </a>
+        </div>
+        <div class="fixedbg toTop">
+            <a href="#top">
+                <img src="images/tp.png" alt="">
+                <span>回到顶部</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 搜索栏及以上 -->
+    <div class="upper">
+        <!-- 头部信息 -->
+        <div class="headMessage clearfix">
+            <!-- 电话 -->
+            <div class="tele fl">
+                <a href="#">
+                    <div class="fl img">
+                        <img src="images/PHONE.png" alt="">
+                    </div>
+                    <span class="number font">020-310-41987</span>
+                </a>
+            </div>
+
+            <!-- 电邮 -->
+            <div class="email fl">
+                <a href="#">
+
+                    <div class="fl img">
+                        <img src="images/E-mail.png" alt="">
+                    </div>
+
+                    <span class="address font">chn_mahone @163.com</span>
+                </a>
+            </div>
+
+            <!-- 欢迎 -->
+            <span class="welcome font">欢迎来到热泉港!</span>
+
+            <!-- 注册登录 -->
+            <div class="fr regLog">
+                <a href="#" class="user fl">
+                    <div class="img">
+                        <img src="images/MAN USER.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="font log fl">登录</a>
+                <a href="#" class="font reg fl">注册</a>
+            </div>
+        </div>
+
+        <!-- 头部白色导航栏和logo -->
+        <div class="whiteNav clearfix">
+
+            <!-- logo -->
+            <div class="logo fl">
+                <h1 class="logoImg fl"><a href="#">热泉港</a></h1>
+                <div class="text fl">
+                    <a href="#">热泉港</a>
+                    <p class="intro">生命科学仪器试剂耗材经销商</p>
+                </div>
+            </div>
+
+            <!-- 导航栏 -->
+            <div class="nav fr">
+                <ul>
+                    <li class="fl active"><a href="#">Yechine首页</a></li>
+                    <li class="fl"><a href="#">公司简介</a></li>
+                    <li class="fl"><a href="#">人才招聘</a></li>
+                    <li class="fl"><a href="#">公告通知</a></li>
+                    <li class="fl"><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 搜索栏部分 -->
+        <div class="searchbg">
+            <div class="searchBox">
+
+                <!-- 全部搜索 -->
+                <form action="#" class="clearfix all">
+                    <div class="submit fl">
+                        <div class="img">
+                        </div>
+
+                        <button type="submitBtn">
+                            <div class="fl text">全部搜索</div>
+                        </button>
+                    </div>
+
+                    <div class="searchContent fl">
+                        <input type="text" value="请输入您要搜索的产品分类、型号" style="color: rgb(191, 191, 191);
+                        " onfocus="if(this.value == '请输入您要搜索的产品分类、型号'){this.value='';this.style.color
+                        ='#424242';}" onblur="if(this.value ==''){this.value = '请输入您要搜索的产品分类、型号';
+                        this.style.color = 'rgb(191, 191, 191)';}">
+                    </div>
+                </form>
+
+                <!-- 名称搜索 -->
+                <form action="#" class="clearfix">
+                    <div class="submit fl">
+
+                        <div class="img">
+                        </div>
+                        <button type="submitBtn">
+                            <div class="fl text">名称搜索</div>
+                        </button>
+                    </div>
+                    <div class="searchContent fl">
+                        <input type="text" value="请输入您要搜索的产品名称" style="color: rgb(191, 191, 191);
+                        " onfocus="if(this.value == '请输入您要搜索的产品名称'){this.value='';this.style.color
+                        ='#424242';}" onblur="if(this.value ==''){this.value = '请输入您要搜索的产品名称';
+                        this.style.color = 'rgb(191, 191, 191)';}">
+                    </div>
+                </form>
+
+                <!-- 热词 -->
+                <div class="HotKeys">
+                    <ul class="clearfix">
+                        <li class="fl">HOT关键词：</li>
+                        <li class="fl"><a href="#">灭菌器</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">离心管</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">手套</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">pH计</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">活性口罩</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">滤纸</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#">胶头</a></li>
+                        <li class="fl line"> | </li>
+                        <li class="fl"><a href="#"> 三脚架 </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 更多资讯及以下 -->
+    <div class="under layer">
+        <!-- 更多资讯 -->
+        <div class="more clearfix">
+            <!-- 标题 -->
+            <h3 class="title clearfix">
+                <div class="line fl"></div>
+                更多资讯
+                <div class="line fr"></div>
+            </h3>
+
+            <!-- 旁边选择栏 -->
+            <div class="sideBar fl">
+                <ul>
+                    <li class="content active">尖端科技</li>
+                    <li class="content">网络研讨会</li>
+                    <li class="content">食药资讯</li>
+                    <li class="content">最新应用</li>
+                </ul>
+            </div>
+
+
+            <!-- 主体 -->
+            <div class="main fl">
+                <!-- 图文内容 -->
+                <div class="passage">
+                    <a href="#" class="fl img"><img src="images/XTrac.png" alt=""></a>
+                    <p class="fl">XTrac智能液体萃取平台可用于固体、液体中目标物质的自动提取，过滤实验，可用于农业、烟草、化学、食品、制药等行业。</p>
+                    <a href="#" class="Lmore fr">了解更多</a>
+                </div>
+                <div class="passage">
+                    <a href="#" class="fl img"><img src="images/austin-neill.jpg" alt=""></a>
+                    <p class="fl">GraviTrac智能称量平台可用于大批量的称重、恒重实验，可用于制药、农业、烟草、化工、食品、制药等行业。</p>
+                    <a href="#" class="Lmore fr">了解更多</a>
+                </div>
+                <div class="passage">
+                    <a href="#" class="fl img"><img src="images/MultiTasker.png" alt=""></a>
+                    <p class="fl">MultiTasker智能多功能样品制备平台用于前处理样品的制备，可自动完成液体化的处理，标样的制备、 提取、过滤等实验，可用于制药、食品、农业、化学等行业。</p>
+                    <a href="#" class="Lmore fr">了解更多</a>
+                </div>
+                <div class="passage">
+                    <a href="#" class="fl img"><img src="images/jametlene-reskp.png" alt=""></a>
+                    <p class="fl">GraviTracPLUS智能称重分装平台用于多种固体样品的自动称量及分装，混合可用于化学、食品、制药等行业。</p>
+                    <a href="#" class="Lmore fr">了解更多</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部亮点 -->
+        <div class="bottom clearfix">
+            <!-- 左四白色区域 -->
+            <div class="left fl">
+                <div class="feature cart clearfix">
+                    <img src="images/CART.png" alt="">
+                    <h4>大量现货</h4>
+                    <span>现货产品4点前下单当天发货</span>
+                </div>
+                <div class="feature globe clearfix">
+                    <img src="images/GLOBE 1.png" alt="">
+                    <h4>满500免运费</h4>
+                    <span>部分区域订单满500免运费</span>
+                </div>
+                <div class="feature clipboard clearfix">
+                    <img src="images/CLIPBOARD.png" alt="">
+                    <h4>增值税专用发票</h4>
+                    <span>可提供增值税专用发票</span>
+                </div>
+                <div class="feature clock clearfix">
+                    <img src="images/CLOCK.png" alt="">
+                    <h4>快捷配送</h4>
+                    <span>一件即发，享受快捷服务</span>
+                </div>
+            </div>
+
+            <!-- 右四黑色区域 -->
+            <div class="right fl">
+                <div class="feature credit clearfix">
+                    <img src="images/CREDIT CARD.png" alt="">
+                    <h4>价格低</h4>
+                    <span>力求最合适的产品配最优的价格</span>
+                </div>
+                <div class="feature cronometer clearfix">
+                    <img src="images/CRONOMETER.png" alt="">
+                    <h4>货期短</h4>
+                    <span>专人负责，专业跟进，提高效率</span>
+                </div>
+                <div class="feature lab clearfix">
+                    <img src="images/LAB.png" alt="">
+                    <h4>品种多</h4>
+                    <span>商品种类涵盖多个应用领域</span>
+                </div>
+                <div class="feature gear clearfix">
+                    <img src="images/GEAR.png" alt="">
+                    <h4>包退换</h4>
+                    <span>有质量或者功能问题包退换</span>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+
+
+</html>

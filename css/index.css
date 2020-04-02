@@ -1,0 +1,568 @@
+@import 'reset.css';
+
+
+
+/* 公用图标 */
+.fixed{
+    position: fixed;
+    height: 329rem;
+    width: 96rem;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.fixed img{
+    display: block;
+    margin: 0 auto;
+}
+
+.fixed .fixedbg{
+    padding-top: 14rem;
+    background-color: rgb(109, 108, 108);
+    width: 96rem;
+    height: 93rem;
+    text-align: center;
+}
+
+.fixed .QRcode img{
+    width: 60rem;
+    height: 61rem;
+}
+
+.fixed span{
+    line-height: 32rem;
+    font-size: 17rem;
+    color: rgb(255, 255, 255);
+}
+
+.fixed .service img{
+    width: 49rem;
+    height: 61rem;
+}
+
+.fixed .toTop img{
+    width: 48rem;
+    height: 57rem;
+}
+
+
+/* 头部信息 */
+.upper{
+
+    margin: 0 auto;
+}
+
+.upper .headMessage {
+    background-color: rgb(61, 61, 61);
+    padding: 0 157rem;
+    height: 43rem;
+    overflow: hidden;
+}
+
+
+
+.upper .headMessage a{
+    
+    height: 43rem;
+}
+
+.upper .headMessage div{
+    height: 43rem;
+}
+
+.upper .headMessage .font{
+    color: rgb(255, 255, 255);
+    font-size: 20rem;
+    line-height: 43rem;
+}
+
+.upper .headMessage .tele{
+    margin-right: 38rem;
+}
+
+.upper .headMessage .tele img{
+    
+    height: 30rem;
+    width: 30rem;
+    padding: 6.5rem 0;
+    margin-right: 11rem;
+}
+
+.upper .headMessage .email img{
+    height: 23rem;
+    width: 30rem;
+}
+
+.upper .headMessage .email .img{
+    padding: 10rem 0;
+    height: 23rem;
+    margin-right: 12rem;
+}
+
+
+
+.upper .headMessage .welcome{
+    letter-spacing:1.35rem;
+    margin:  0 267rem 0 144rem;
+    font-weight: bold;
+}
+
+
+
+
+.upper .headMessage .regLog{
+    width: 143rem;
+    height: 43rem;
+}
+
+.upper .headMessage .regLog img{
+    width: 27rem;
+    height: 31rem;
+    padding: 6rem 0;
+    margin-right: 13rem;
+}
+
+.upper .headMessage .regLog .log{
+    margin-right: 22rem;
+}
+
+
+
+/* 头部白色导航栏和logo */
+
+
+.upper .whiteNav{
+    height: 97rem;
+    padding: 21rem 157rem;
+}
+
+/* logo */
+.upper .whiteNav .logo{
+    width: 383rem;
+    height: 97rem;
+    
+}
+
+
+
+
+
+/* logo图 */
+.upper .whiteNav .logo h1{
+    background: url(../images/logo.png) no-repeat center;
+    background-size: 97rem 97rem;
+    text-indent: -9999rem;
+    overflow: hidden;
+    width: 97rem;
+    height: 97rem;
+    line-height: 87rem;
+}
+
+
+/* logo文字 */
+.upper .whiteNav .logo .text{
+    margin-top: 10rem;
+    width: 279rem;
+    height: 77rem;
+}
+
+.upper .whiteNav .logo p{
+    font-size: 18rem;
+    display: inline-block;
+    line-height: 18rem;
+    margin-top: 13rem;
+    font-weight: 900;
+    letter-spacing: 0.45rem;
+}
+
+.upper .whiteNav .logo a{
+    font-size: 45rem;
+    display: inline-block;
+    line-height: 45rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1.1rem;
+}
+
+/* 导航栏 */
+.upper .whiteNav .nav{
+    height: 93rem;
+    
+}
+
+.upper .whiteNav .nav li{
+    font-size: 18rem;
+    line-height: 97rem;
+    height: 97rem;
+    
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-left: 34rem;
+    letter-spacing: 0.45rem;
+}
+
+.upper .whiteNav .nav li a{
+    color: inherit;
+    
+}
+
+.upper .whiteNav .nav .active{
+    color: rgb(27, 161, 157);
+    
+}
+
+
+/* 搜索栏部分 */
+
+.upper .searchbg{
+    height: 376rem;
+    background: url(../images/searchbg.png) no-repeat center;
+    background-size: 100% 417rem;
+    background-color: black;
+    position: relative;
+}
+
+.upper .searchbg .searchBox {
+    height: 151rem;
+    width: 753rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 21rem;
+}
+
+.upper .searchbg .searchBox form{
+    width: 753rem;
+    height: 54rem;
+}
+
+
+.upper .searchbg .searchBox .all{
+    margin-bottom: 15rem;
+}
+
+
+/* 搜索栏按钮 */
+
+.upper .searchbg .searchBox .submit{
+    width: 130rem;
+    height: 54rem;
+    position: relative;
+}
+
+.upper .searchbg .searchBox .submit button{
+    width: 100%;
+    height: 100%;
+    line-height: 54rem;
+    background-color: rgb(27, 161, 157);
+    position: relative;
+    cursor: pointer;
+}
+
+.upper .searchbg .searchBox .submit .img{
+    position: absolute;
+    background: url(../images/searching.png) center no-repeat;
+    background-size: 25rem 27rem;
+    width: 25rem;
+    height: 27rem;
+    top: 14rem;
+    left: 13rem;
+    z-index: 1;
+}
+
+.upper .searchbg .searchBox .submit .text{
+    color: rgb(255, 255, 255);
+    font-size: 14rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    float: right;
+    margin-right: 22rem;
+}
+
+
+/* 搜索栏输入框 */
+.upper .searchbg .searchBox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    text-indent: 14rem;
+    font-size: 15rem;
+}
+
+.upper .searchbg .searchBox .searchContent{
+    width: 623rem;
+    height: 54rem;
+}
+
+
+
+/* 搜索栏热词 */
+.upper .searchbg .searchBox .HotKeys{
+    margin-top: 8rem;
+}
+
+.upper .searchbg .searchBox .HotKeys li{
+    font-size: 15rem;
+    letter-spacing: 1rem;
+    color: rgb(255, 255, 255);
+    height: 15rem;
+    line-height: 15rem;
+}
+
+
+.upper .searchbg .searchBox .HotKeys a{
+    color: inherit;
+}
+
+
+.upper .searchbg .searchBox .HotKeys .line{
+    letter-spacing: 0;
+    margin: 0 3rem;
+}
+
+
+/* 更多资讯及以下 */
+.under{
+    height: 612rem;
+    
+    
+}
+
+/* 更多资讯 */
+.under .more{
+    height: 367rem;
+    margin: 42rem 0 51rem 0;
+    
+}
+
+/* 更多资讯蓝色标题 */
+.under .more .title{
+    width: 169rem;
+    height: 29rem;
+    color: rgb(27, 161, 157);
+    line-height: 29rem;
+    font-size: 26rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.under .more .title .line{
+    background: url(../images/titleline.png);
+    background-size: 21rem 29rem;
+    width: 21rem;
+    height: 29rem;
+}
+
+/* 旁边选择栏 */
+.under .more .sideBar{
+    height: 330rem;
+    width: 171rem;
+}
+
+
+
+.under .more .sideBar .content{
+    cursor: pointer;
+    text-align: center;
+    font-size: 19rem;
+    height: 52rem;
+    line-height: 52rem;
+    border: 2rem solid rgb(198, 198, 198);
+    border-right: 1rem solid rgb(80, 80, 80);
+    color: rgb(255, 254, 254);
+    background-color: rgb(61, 61, 61);
+    font-weight: bold;
+    letter-spacing: 1rem;
+    position: relative;
+    left: 2rem;
+    z-index: 1;
+}
+
+.under .more .sideBar .active{
+    border-right: 1rem solid rgb(251, 251, 251);
+    background-color: rgb(255, 255, 255);
+    color: rgb(61, 61, 61);
+}
+
+
+/* 更多资讯主体 */
+.under .more .main{
+    width: 1031rem;
+    height: 330rem;
+    box-sizing: border-box;
+    border: 2rem solid rgb(213, 213, 213);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.under .more .main .passage{
+    height: 128rem;
+    width: 431rem;
+    position: relative;
+}
+
+.under .more .main .passage .img{
+    margin-right: 11rem;
+}
+
+
+.under .more .main .passage p{
+    text-align: left;
+    width: 235rem;
+    font-size: 13.7rem;
+    color: rgb(0, 0, 0);
+}
+
+.under .more .main .passage .Lmore{
+  
+    height: 11rem;
+    font-size: 11rem;
+    line-height: 11rem;
+    position: absolute;
+    right: 0;
+    bottom: 9rem;
+    color: rgb(27, 161, 157);
+}
+
+.under .more .main .passage img{
+    width: 182rem;
+    height: 130rem;
+}
+
+/* 底部特点 */
+.under .bottom{
+    height: 194rem;
+    width: 1204rem;
+    margin-bottom: 73rem;
+}
+
+
+/* 左四 */
+
+
+
+.under .bottom .left{
+    display: flex;
+    width: 50%;
+    height: 192rem;
+    border-top: 2rem solid rgb(61, 61, 61);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.under .bottom img{
+    display: block;
+    float: left;
+    padding: 6.5rem 20rem 6.5rem 0;
+}
+
+
+.under .bottom .left .feature{
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    padding: 26rem 0;
+}
+
+
+.under .bottom .left h4{
+    font-size: 24rem;
+    line-height: 24rem;
+    font-weight: 900;
+    padding-bottom: 8rem;
+}
+
+.under .bottom .left span{
+    font-size: 13rem;
+    line-height: 13rem;
+    color: rgb(72, 72, 72);
+}
+
+.under .bottom .left .cart img{
+    width: 35rem;
+    height: 31rem;
+}
+
+.under .bottom .left .globe img{
+    width: 31rem;
+    height: 31rem;
+    padding-left: 26rem;
+}
+
+.under .bottom .left .clipboard img{
+    width: 28rem;
+    height: 35rem;
+
+    padding: 4.5rem 20rem 4.5rem 6rem;
+}
+
+.under .bottom .left .clock img{
+    width: 31rem;
+    height: 31rem;
+    padding-left: 26rem;
+}
+
+/* 右四 */
+.under .bottom .right{
+    display: flex;
+    width: 50%;
+    height: 192rem;
+    border-top: 2rem solid rgb(61, 61, 61);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(61, 61, 61);
+}
+
+.under .bottom .right .feature{
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    padding: 26rem 0;
+}
+
+.under .bottom .right .credit img{
+    width: 38rem;
+    height: 30rem;
+    padding: 7rem 11rem 7rem 41rem;
+}
+
+.under .bottom .right .cronometer img{
+    width: 28rem;
+    height: 33rem;
+    padding: 5.5rem 15rem 5.5rem 51rem;
+}
+
+.under .bottom .right .lab img{
+    width: 31rem;
+    height: 31rem;
+    padding: 6.5rem 15rem 6.5rem 45rem;
+}
+
+.under .bottom .right .gear img{
+    width: 31rem;
+    height: 31rem;
+    padding: 6.5rem 15rem 6.5rem 51rem;
+}
+
+.under .bottom .right h4{
+    font-size: 24rem;
+    line-height: 24rem;
+    font-weight: 900;
+    padding-bottom: 8rem;
+    color: rgb(231, 231, 231);
+}
+
+.under .bottom .right span{
+    font-size: 13rem;
+    line-height: 13rem;
+    color: rgb(232, 232, 232);
+}
