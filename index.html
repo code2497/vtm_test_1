@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "font-size: 1px;">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,12 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <title>热泉港 - 生命科学仪器试剂耗材经销商</title>
+    
+
+</head>
+
+
+<body>
     <script>
         //简单自适应加载
 
@@ -24,7 +30,7 @@
 
                 recalc = function (e) {
                     //窗口改变后的回调函数
-                    console.log(e);
+                    // console.log(e);
                     var clientWidth = getViewportOffset();
                     if ((clientWidth <= 1070 && e.type != 'DOMContentLoaded') || (clientWidth <= 1070 && e.type == 'DOMContentLoaded')) {
                         docEl.style.fontSize = 1 * (1070 / 1519) + 'px';
@@ -49,11 +55,8 @@
         autoAdjust(document, window);
     </script>
 
-</head>
-
-
-<body>
-    <!-- 固定公用图标 -->
+    <!-- 固定公用图标及弹窗 -->
+    <!-- 公共图标 -->
     <div class="fixed">
         <div class="fixedbg QRcode">
             <img src="images/QRcode.png" alt="">
@@ -72,6 +75,19 @@
             </a>
         </div>
     </div>
+
+    <!-- 弹窗 -->
+    <div class="popup">
+        <div class="pQRcode clearfix" style="display: none;">
+            <div class="arrow fr"></div>
+            <div class="main fl">
+                <img src="images/bigQR.png" alt="">
+                <p>扫描二维码关注</p>
+                <p>热泉港公众号</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- 搜索栏及以上 -->
     <div class="upper">
@@ -128,7 +144,7 @@
 
             <!-- 导航栏 -->
             <div class="nav fr">
-                <ul>
+                <ul class="clearfix">
                     <li class="fl active"><a href="#">Yechine首页</a></li>
                     <li class="fl"><a href="#">公司简介</a></li>
                     <li class="fl"><a href="#">人才招聘</a></li>
@@ -306,6 +322,8 @@
         </div>
 
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 
 
