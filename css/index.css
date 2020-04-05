@@ -139,17 +139,20 @@
     margin-right: 38rem;
 }
 
-.upper .headMessage .tele img{
-    
+.upper .headMessage .tele .teleimg{
     height: 30rem;
     width: 30rem;
-    padding: 6.5rem 0;
+    margin: 6.5rem 0;
     margin-right: 11rem;
+    background: url('../images/css_sprites.png') -120rem -62rem;
+    background-size: 211rem 206rem;
 }
 
-.upper .headMessage .email img{
+.upper .headMessage .email .emailimg{
     height: 23rem;
     width: 30rem;
+    background: url('../images/css_sprites.png') -70rem -66rem;
+    background-size: 211rem 206rem;
 }
 
 .upper .headMessage .email .img{
@@ -174,11 +177,13 @@
     height: 43rem;
 }
 
-.upper .headMessage .regLog img{
+.upper .headMessage .regLog .userimg{
     width: 27rem;
     height: 31rem;
-    padding: 6rem 0;
+    margin: 6rem 0;
     margin-right: 13rem;
+    background: url('../images/css_sprites.png') -172rem -64rem;
+    background-size: 211rem 206rem;
 }
 
 .upper .headMessage .regLog .log{
@@ -451,6 +456,7 @@
     z-index: 1;
 }
 
+/* 每个侧边栏按钮激活后的样式 */
 .under .more .sideBar .active{
     border-right: 1rem solid rgb(251, 251, 251);
     background-color: rgb(255, 255, 255);
@@ -459,11 +465,17 @@
 
 
 /* 更多资讯主体 */
+
+.under .more .border{
+    border: 2rem solid rgb(231, 231, 231);
+    width: 1031rem;
+    height: 330rem;
+}
+
 .under .more .main{
     width: 1031rem;
     height: 330rem;
     box-sizing: border-box;
-    border: 2rem solid rgb(213, 213, 213);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -525,10 +537,12 @@
     flex-wrap: wrap;
 }
 
-.under .bottom img{
+.under .bottom .img{
     display: block;
     float: left;
-    padding: 6.5rem 20rem 6.5rem 0;
+    margin: 6.5rem 20rem 6.5rem 0;
+    background: url('../images/css_sprites.png');
+    background-size: 211rem 206rem;
 }
 
 
@@ -553,28 +567,33 @@
     color: rgb(72, 72, 72);
 }
 
-.under .bottom .left .cart img{
+.under .bottom .left .cart .cartimg{
     width: 35rem;
     height: 31rem;
+    margin: 6.5rem 20rem 6.5rem 0;
+    background-position: -10rem -61rem;
+    
 }
 
-.under .bottom .left .globe img{
-    width: 31rem;
-    height: 31rem;
-    padding-left: 26rem;
+.under .bottom .left .globe .globeimg{
+    width: 32rem;
+    height: 32rem;
+    margin-left: 26rem;
+    background-position: -62rem -113rem;
 }
 
-.under .bottom .left .clipboard img{
-    width: 28rem;
-    height: 35rem;
-
-    padding: 4.5rem 20rem 4.5rem 6rem;
+.under .bottom .left .clipboard .clipboardimg{
+    width: 30rem;
+    height: 36rem;
+    background-position: -70rem -10rem;
+    margin: 4.5rem 20rem 4.5rem 6rem;
 }
 
-.under .bottom .left .clock img{
-    width: 31rem;
-    height: 31rem;
-    padding-left: 26rem;
+.under .bottom .left .clock .clockimg{
+    width: 32rem;
+    height: 32rem;
+    background-position: -120rem -10rem;
+    margin-left: 26rem;
 }
 
 /* 右四 */
@@ -595,28 +614,33 @@
     padding: 26rem 0;
 }
 
-.under .bottom .right .credit img{
-    width: 38rem;
-    height: 30rem;
-    padding: 7rem 11rem 7rem 41rem;
+.under .bottom .right .credit .creditimg{
+    width: 40rem;
+    height: 31rem;
+    margin: 7rem 11rem 7rem 41rem;
+    background-position: -10rem -10rem;
+
 }
 
-.under .bottom .right .cronometer img{
-    width: 28rem;
-    height: 33rem;
-    padding: 5.5rem 15rem 5.5rem 51rem;
+.under .bottom .right .cronometer .cronometerimg{
+    width: 29rem;
+    height: 34rem;
+    margin: 5.5rem 15rem 5.5rem 51rem;
+    background-position: -172rem -10rem;
 }
 
-.under .bottom .right .lab img{
+.under .bottom .right .lab .labimg{
+    width: 32rem;
+    height: 32rem;
+    margin: 6.5rem 15rem 6.5rem 45rem;
+    background-position: -114rem -113rem;
+}
+
+.under .bottom .right .gear .gearimg{
     width: 31rem;
     height: 31rem;
-    padding: 6.5rem 15rem 6.5rem 45rem;
-}
-
-.under .bottom .right .gear img{
-    width: 31rem;
-    height: 31rem;
-    padding: 6.5rem 15rem 6.5rem 51rem;
+    margin: 6.5rem 15rem 6.5rem 51rem;
+    background-position: -10rem -113rem;
 }
 
 .under .bottom .right h4{
