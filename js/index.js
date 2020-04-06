@@ -13,7 +13,7 @@ var QRshow = function () {
 }; 
 
 //更多资讯栏滚动函数
-var scrolling = function () {
+var scrolling = function (images, duration) {
     var sideBarLi = document
         .querySelector(".under")
         .querySelector(".more")
@@ -39,33 +39,28 @@ var scrolling = function () {
         'iTimer': 10,
         'pauseKey': 0,//暂停判断，不能乱动
         'counter': 0,//计数器，不能乱动
-        'images': 4,
+        'images': images,
         'jumpKey': 0//用来判断是否跳转，不能乱动
     };
 
     var start = true;//只是用来解决第一圈不正常counter
 
     json.outsideTimer = setInterval(function () {
-        
         if(start){
             //只是用来解决第一圈不正常counter
             json.counter++;
             start = false;
         }
-
-        
-        
         var i = (json.counter == 0) ? (3) : (json.counter - 1);//选择要消失的那个内容的下标
         json.obj = mainContent[i];
         mainContent[i].style.display = 'none';//让上一个内容立刻消失
         mainContent[i].style.opacity= '0';
-       
         //让显示内容缓慢出现
         mainContent[json.counter].style.display = 'flex';
         mainContent[json.counter].style.opacity = '0';
         json.obj = mainContent[json.counter];
         move(json);
-    }, 3000);
+    }, duration);
 
 
     //以下是悬停设置
@@ -80,7 +75,6 @@ var scrolling = function () {
             json.pauseKey = 0;
             //重启计时器
             json.outsideTimer = setInterval(function () {
-                
                 json.jumpKey = 0;
                 var i = (json.counter == 0) ? (3) : (json.counter - 1);//选择要消失的那个内容的下标
                 json.obj = mainContent[i];
@@ -92,13 +86,13 @@ var scrolling = function () {
                 json.obj = mainContent[json.counter];
                 move(json);
                 
-            }, 7000);
+            }, duration);
         }
     }
     //悬停结束
 
 
-    //以下是圆形按钮设置
+    //以下是按钮设置
     for (var i = 0; i < 4; i++) {
         (function (i) {
             sideBarLi[i].onclick = function () {
@@ -124,7 +118,7 @@ var scrolling = function () {
                 
 
                 json.counter = json.counter == 3?(0):(json.counter + 1);
-                json.outsideTimer = setInterval(function () {
+                json.outsideTimer = setInterval(function () {//定时器重启
                     json.jumpKey = 0;
                     var i = (json.counter == 0) ? (3) : (json.counter - 1);//选择要消失的那个内容的下标
                     json.obj = mainContent[i];
@@ -135,13 +129,13 @@ var scrolling = function () {
                     mainContent[json.counter].style.opacity = '0';
                     json.obj = mainContent[json.counter];
                     move(json);
-                }, 7000);
+                }, duration);
             }
 
 
         }(i));
     }
-    //圆形按钮结束
+    //按钮结束
 
     //样式获取函数
     function getStyle(elem, prop){
@@ -192,7 +186,6 @@ var scrolling = function () {
             //一次运动是否结束的判断
             if(!json.jumpKey && json.pauseKey == 0){
                 if (cur == json.iTarget) {
-                    
                     if (json.counter < json.images - 1) {
                         json.counter++;
                     } else {
@@ -216,7 +209,7 @@ var scrolling = function () {
         
         return;
     }
-}; 
+};
 
-scrolling();
+scrolling(4, 7000);
 QRshow();
